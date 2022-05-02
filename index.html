@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+</head>
+<body>
+  <h2>Perfil do Usuário</h2>
+  <form>
+    <fieldset style="margin-bottom:10px;">
+      <legend>Informações pessoais</legend>
+      <div style="margin-bottom:10px;">
+      <label for="name">Nome (obrigatório):</label>
+      <input type="text" id="name" name="name" required>
+      </div>
+      <div style="margin-bottom:10px;">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco">
+      </div>
+      
+      <div style="margin-bottom:15px;">
+        <label for="date">Data de Nascimento:</label>
+        <input type="date" id="date" name="data-nascimento"> 
+      </div>
+    
+      <div style="margin-bottom:5px;">
+          <p>Gênero</p>
+          <input type="radio" id="fem" name="genero" value="1">
+          <label for="fem">Feminino</label>
+          <input type="radio" id="masc" name="genero" value="2">
+          <label for="masc">Masculino</label>
+      </div>
+    </fieldset> 
+
+    <div style="margin-bottom:15px;">
+      <fieldset>
+        <legend>Esportes que pratica</legend>
+        <input type="checkbox" id="esporte1" name="esporte1" value="Futebol">
+        <label for="esporte1">Futebol</label><br>
+        <input type="checkbox" id="esporte2" name="esporte2" value="Vôlei">
+        <label for="esporte2">Vôlei</label><br>
+        <input type="checkbox" id="esporte3" name="esporte3" value="Basquete">
+        <label for="esporte3">Basquete</label><br>
+        <input type="checkbox" id="esporte4" name="esporte4" value="Natação">
+        <label for="esporte4">Natação</label><br>
+        <input type="checkbox" id="esporte5" name="esporte5" value="Corrida">
+        <label for="esporte5">Corrida</label><br>
+        <input type="checkbox" id="esporte6" name="esporte6" value="Outro">
+        <label for="esporte6">Outro</label><br>
+      </fieldset>  
+    </div>
+    <div style="margin-bottom:15px;">
+      <fieldset>
+        <label for="cars">Escolha um carro:</label>
+        <select name="cars" id="cars">
+          <optgroup label="Carros Japoneses">
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+            <option value="nissan">Nissan</option>
+            <option value="subaru">Subaru</option>
+          </optgroup>
+          <optgroup label="Carros Americanos">
+            <option value="ford">Ford</option>
+            <option value="gm">GM</option>
+          </optgroup>
+          <optgroup label="Carros Suecos">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="Carros Alemães">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="vw">VW</option>
+          </optgroup>
+        </select>
+      </fieldset>  
+    </div>
+    <!-- submit e reset Submit para enviar as informações e reset para limpar os campos -->
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </div>  
+  </form>
+</body>
+</html>
